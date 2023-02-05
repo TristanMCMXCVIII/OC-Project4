@@ -352,7 +352,7 @@ footer {
   justify-content: center;
   align-items: center;
   row-gap: 25px;
-  background-color: #03c2e8;
+  background-color: var(--grey2);
   border-radius: 20px 20px 0px 0px;
   padding: 20px;
 }
@@ -364,7 +364,6 @@ footer {
   align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
-  background-color: #008766;
   width: 100%;
 }
 .menu__title {
@@ -381,12 +380,10 @@ footer {
   flex-direction: column;
   width: 100%;
   row-gap: 10px;
-  background-color: red;
 }
 .group-menu__titre {
   font-size: 16px;
   font-weight: 300;
-  background-color: #9356DC;
   margin: 0px;
 }
 
@@ -399,7 +396,7 @@ footer {
   row-gap: 25px;
   padding: 12px;
   border-radius: 15px;
-  background-color: #9356DC;
+  background-color: white;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 }
 .card-menu__left {
@@ -430,4 +427,114 @@ footer {
   font-weight: 700;
   font-style: "Roboto";
   margin: 0px;
+}
+.card-menu:hover > .anim-check {
+  transform: scaleX(1);
+}
+.card-menu:hover > .anim-check .check {
+  transform: translateX(0%);
+}
+.card-menu .anim-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green);
+  max-width: 200px;
+  min-width: 50px;
+  min-height: 20px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 450ms ease-in-out;
+}
+.card-menu .anim-check .check {
+  display: flex;
+  justify-content: center;
+  transform: translateX(250%);
+  transition: transform 450ms ease-in-out;
+  overflow: hidden;
+}
+.card-menu .anim-check .check .check__img {
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+}
+
+/* $$$$$$$$$$$$$$$ */
+.card-menu2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.card-menu2 .card-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px;
+}
+.card-menu2 .card-cont__left2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: flex-start;
+}
+.card-menu2 .card-cont__left2__title2 {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: "Roboto";
+  margin: 0px;
+}
+.card-menu2 .card-cont__left2__description2 {
+  font-size: 15px;
+  font-weight: 300;
+  font-style: "Roboto";
+  margin: 0px;
+}
+.card-menu2 .card-cont__right2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.card-menu2 .card-cont__right2__price2 {
+  font-size: 15px;
+  font-weight: 700;
+  font-style: "Roboto";
+  margin: 0px;
+}
+.card-menu2:hover > .anim-check {
+  transform: scaleX(1);
+  max-width: 200px;
+  min-width: 80px;
+  min-height: 20px;
+}
+.card-menu2:hover > .anim-check .check {
+  transform: translateX(0%);
+}
+.card-menu2 .anim-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green);
+  width: 0px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 450ms ease-in-out;
+}
+.card-menu2 .anim-check .check {
+  display: flex;
+  justify-content: center;
+  transform: translateX(250%);
+  transition: transform 450ms ease-in-out;
+  overflow: hidden;
+}
+.card-menu2 .anim-check .check .check__img {
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
