@@ -1,0 +1,49 @@
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width:100%;
+
+    margin-top: 65px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    width:100%;
+
+    &--grey{
+        background-color: #F7F7F7;
+    }
+
+    &--negativeMargin{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: -25px;
+
+        width:100%;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 320px;
+    max-width: 768px;
+
+    &--large{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
