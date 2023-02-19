@@ -16,15 +16,6 @@ html {
   --grey2: #EAEAEA;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  font-family: "Roboto", "Raleway", sans-serif;
-}
-
 h1 {
   font-weight: 700;
   font-size: 24px;
@@ -91,6 +82,66 @@ button {
   margin: 0px 10px;
   -moz-column-gap: 20px;
        column-gap: 20px;
+}
+
+.separator--green {
+  height: 3px;
+  width: 40px;
+  margin-top: 5px;
+  background-color: #99E2D0;
+}
+
+.plate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.plate__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+  row-gap: 5px;
+}
+.plate__left .plate__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.plate__left .plate__description {
+  font-size: 15px;
+  font-weight: 300;
+}
+.plate:hover > .plate__right > .plate__selected {
+  transform: scaleX(1);
+  max-width: 200px;
+  min-width: 80px;
+  min-height: 20px;
+}
+.plate__right {
+  display: flex;
+  flex-direction: row;
+}
+.plate__right .plate__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 12px;
+}
+.plate__right .plate__info .plate__price {
+  font-size: 15px;
+  font-weight: 700;
+}
+.plate__right .plate__selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 450ms ease-in-out;
 }
 
 .location {
@@ -466,6 +517,15 @@ footer {
   font-weight: 500;
   font-size: 16px;
   color: #FFFFFF;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: "Roboto", "Raleway", sans-serif;
 }
 
 .screen {
