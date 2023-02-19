@@ -6,3 +6,64 @@
     
     background-color: $green;
 }
+
+.new-thumbnail{
+    position: absolute; //need a position = relative in the parent container (card) to anchor this element
+
+    top: 20px;
+    right: 20px;
+    background-color: #99e2d0;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #008766;
+
+    padding: 5px 10px;
+
+    border-radius: 2px;
+
+    z-index: 1;  
+    
+    animation: shake 2000ms both infinite alternate;
+}
+
+@keyframes shake{
+    0%,90% {
+        transform: scale(1)
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+
+
+
+.dontlike{
+    transform: scale(1.5);
+    position: relative;
+
+    &:hover{
+        & .like{
+            transform: scale(1);
+        }
+    }       
+}
+
+.like{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    background:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+ 
+    -webkit-background-clip: text;
+    background-clip:calc(0);//?
+	-webkit-text-fill-color: transparent;
+
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: all 500ms;
+}
