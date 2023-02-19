@@ -15,11 +15,27 @@
 
     &-container{
         display: flex;
+
+        position: relative;
+
         justify-content: center;
         align-items: center;
 
-        max-width: 300px;
-        min-width: 200px;
+        width: 100%;
+        min-width: 320px;
+        max-width: 768px;
+
+        i {
+            position: absolute;
+
+            transform: scale(1.2);
+
+            left: 20px;
+
+            &:hover{
+                color: $primary;
+            }
+        }
 
         &__img{
             width: 162px;
@@ -29,3 +45,4 @@
         }
     }
 }
+
