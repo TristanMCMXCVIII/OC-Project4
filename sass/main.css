@@ -191,7 +191,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   transform: scale(0);
   transform-origin: bottom;
-  transition: all 800ms;
+  transition: all 500ms;
 }
 
 .card-plate {
