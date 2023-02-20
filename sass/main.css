@@ -191,7 +191,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   transform: scale(0);
   transform-origin: bottom;
-  transition: all 500ms;
+  transition: all 800ms;
 }
 
 .card-plate {
@@ -230,44 +230,43 @@ h1 {
   font-style: "Roboto";
   margin: 0px;
 }
-.card-plate .plate__right {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+.card-plate:hover > .zone {
+  transform: translateX(0px);
 }
-.card-plate .plate__right__price {
-  font-size: 15px;
-  font-weight: 700;
-  font-style: "Roboto";
-  margin: 0px;
-}
-.card-plate:hover > .anim-check {
-  transform: scaleX(1);
-  max-width: 200px;
-  min-width: 80px;
-  min-height: 20px;
-}
-.card-plate:hover > .anim-check .check {
+.card-plate:hover > .zone > .zone-check > .check {
   transform: translateX(0%);
 }
-.card-plate .anim-check {
+.card-plate .zone {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  transform: translateX(80px);
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  transform-origin: right;
+  transition: transform 450ms ease-in-out;
+}
+.card-plate .zone .zone-price {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.card-plate .zone .zone-check {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--green);
-  width: 0px;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 450ms ease-in-out;
+  width: 80px;
+  height: 100%;
 }
-.card-plate .anim-check .check {
+.card-plate .zone .zone-check .check {
   display: flex;
   justify-content: center;
   transform: translateX(250%);
-  transition: transform 450ms ease-in-out;
+  transition: transform 450ms 150ms ease-in-out;
   overflow: hidden;
 }
-.card-plate .anim-check .check .check__img {
+.card-plate .zone .zone-check .check .check__img {
   height: 20px;
   width: 20px;
   overflow: hidden;
