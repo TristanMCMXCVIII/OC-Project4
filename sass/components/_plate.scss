@@ -14,6 +14,14 @@
 
     overflow: hidden;
 
+    animation: plate-entering 1200ms both ease-in-out;
+
+    @for $i from 1 through 9{
+        &--#{$i}{
+            animation-delay: $i*400ms;
+        }
+    }
+
     .plate{
 
         display: flex;
@@ -107,5 +115,20 @@
                 }
             }
         }
+    }
+}
+
+
+@keyframes plate-entering {
+    0%{
+        transform: translateX(-200%);
+    }
+    40%{
+        transform: translateX(-15%);
+        animation-timing-function: cubic-bezier(0,.73,.42,.43);
+    }
+    100%{
+        transform: translateX(0%);
+        animation-timing-function: cubic-bezier(.43,.42,.26,1);
     }
 }

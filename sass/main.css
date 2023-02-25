@@ -16,6 +16,14 @@ html {
   --grey2: #EAEAEA;
 }
 
+.a {
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
 h1 {
   font-weight: 700;
   font-size: 24px;
@@ -63,6 +71,9 @@ h1 {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   z-index: 1;
   overflow: hidden;
+}
+.button-gradient:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
 }
 .button-gradient:hover::after {
   opacity: 1;
@@ -150,17 +161,7 @@ h1 {
   padding: 5px 10px;
   border-radius: 2px;
   z-index: 1;
-  -webkit-animation: shake 2000ms both infinite alternate;
-          animation: shake 2000ms both infinite alternate;
-}
-
-@-webkit-keyframes shake {
-  0%, 90% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.5);
-  }
+  animation: shake 2000ms both infinite alternate;
 }
 
 @keyframes shake {
@@ -204,6 +205,34 @@ h1 {
   background-color: white;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  animation: plate-entering 1200ms both ease-in-out;
+}
+.card-plate--1 {
+  animation-delay: 400ms;
+}
+.card-plate--2 {
+  animation-delay: 800ms;
+}
+.card-plate--3 {
+  animation-delay: 1200ms;
+}
+.card-plate--4 {
+  animation-delay: 1600ms;
+}
+.card-plate--5 {
+  animation-delay: 2000ms;
+}
+.card-plate--6 {
+  animation-delay: 2400ms;
+}
+.card-plate--7 {
+  animation-delay: 2800ms;
+}
+.card-plate--8 {
+  animation-delay: 3200ms;
+}
+.card-plate--9 {
+  animation-delay: 3600ms;
 }
 .card-plate .plate {
   display: flex;
@@ -272,6 +301,19 @@ h1 {
   overflow: hidden;
 }
 
+@keyframes plate-entering {
+  0% {
+    transform: translateX(-200%);
+  }
+  40% {
+    transform: translateX(-15%);
+    animation-timing-function: cubic-bezier(0, 0.73, 0.42, 0.43);
+  }
+  100% {
+    transform: translateX(0%);
+    animation-timing-function: cubic-bezier(0.43, 0.42, 0.26, 1);
+  }
+}
 .location {
   display: flex;
   flex-direction: row;
@@ -322,6 +364,7 @@ h1 {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  padding-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .restaurant__list {
@@ -343,6 +386,7 @@ h1 {
   background-color: #FFFFFF;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 @media screen and (min-width: 768px) {
   .card {
@@ -397,6 +441,7 @@ h1 {
   background-color: var(--grey2);
   border-radius: 20px 20px 0px 0px;
   padding: 20px;
+  overflow: hidden;
 }
 
 .menu__header {
@@ -619,6 +664,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 0px;
   font-weight: 400;
   font-size: 16px;
