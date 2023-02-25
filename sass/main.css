@@ -208,31 +208,31 @@ h1 {
   animation: plate-entering 1200ms both ease-in-out;
 }
 .card-plate--1 {
-  animation-delay: 400ms;
+  animation-delay: 0ms;
 }
 .card-plate--2 {
-  animation-delay: 800ms;
+  animation-delay: 400ms;
 }
 .card-plate--3 {
-  animation-delay: 1200ms;
+  animation-delay: 800ms;
 }
 .card-plate--4 {
-  animation-delay: 1600ms;
+  animation-delay: 1200ms;
 }
 .card-plate--5 {
-  animation-delay: 2000ms;
+  animation-delay: 1600ms;
 }
 .card-plate--6 {
-  animation-delay: 2400ms;
+  animation-delay: 2000ms;
 }
 .card-plate--7 {
-  animation-delay: 2800ms;
+  animation-delay: 2400ms;
 }
 .card-plate--8 {
-  animation-delay: 3200ms;
+  animation-delay: 2800ms;
 }
 .card-plate--9 {
-  animation-delay: 3600ms;
+  animation-delay: 3200ms;
 }
 .card-plate .plate {
   display: flex;
@@ -738,5 +738,78 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 1400px;
+  }
+}
+
+.loader__out {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  animation: waiting 100ms 4s both;
+}
+
+.loader__in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.load {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100px;
+  height: 75px;
+}
+.load__bar {
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  height: 100%;
+  width: 10px;
+  border-radius: 50px;
+  animation: bar 1000ms both infinite cubic-bezier(0.45, 0, 0.55, 1) alternate;
+}
+.load__bar--1 {
+  animation-delay: 200ms;
+}
+.load__bar--2 {
+  animation-delay: 400ms;
+}
+.load__bar--3 {
+  animation-delay: 600ms;
+}
+.load__bar--4 {
+  animation-delay: 800ms;
+}
+.load__bar--5 {
+  animation-delay: 1000ms;
+}
+
+@keyframes bar {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes waiting {
+  0%, 99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }/*# sourceMappingURL=main.css.map */
