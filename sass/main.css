@@ -199,8 +199,8 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  -moz-column-gap: 0px;
-       column-gap: 0px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
@@ -236,33 +236,25 @@ h1 {
 }
 .card-plate .plate {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 70%;
-  padding: 12px;
-}
-.card-plate .plate__left {
-  display: flex;
   flex-direction: column;
-  row-gap: 10px;
   justify-content: flex-start;
+  row-gap: 10px;
   overflow: hidden;
+  padding: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.card-plate .plate__left__title {
+.card-plate .plate__title {
   font-size: 18px;
   font-weight: 500;
   font-style: "Roboto";
   margin: 0px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
-.card-plate .plate__left__description {
+.card-plate .plate__description {
   font-size: 15px;
   font-weight: 300;
   font-style: "Roboto";
   margin: 0px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .card-plate:hover > .zone {
   transform: translateX(0px);
@@ -274,7 +266,6 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  width: 30%;
   transform: translateX(80px);
   -moz-column-gap: 15px;
        column-gap: 15px;
@@ -587,12 +578,17 @@ h1 {
   align-items: center;
   width: 100%;
   min-width: 320px;
-  max-width: 768px;
 }
 .header-container i {
   position: absolute;
   transform: scale(1.2);
-  left: 20px;
+  left: 25px;
+  top: 25px;
+}
+@media screen and (min-width: 768px) {
+  .header-container i {
+    left: 50px;
+  }
 }
 .header-container i:hover {
   color: #9356DC;
@@ -656,7 +652,7 @@ footer {
 .footer__links {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   row-gap: 10px;
   margin: 0px;
 }
@@ -673,7 +669,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin: 0px;
   font-weight: 400;
   font-size: 16px;
@@ -690,6 +686,7 @@ footer {
 .complexe-line {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   -moz-column-gap: 15px;
        column-gap: 15px;

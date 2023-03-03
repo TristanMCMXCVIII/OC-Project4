@@ -58,7 +58,7 @@ footer{
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
+    justify-content: flex-start;
 
     row-gap: 10px;
     margin: 0px;
@@ -76,7 +76,7 @@ footer{
     flex-direction: column;
 
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     margin: 0px;
 
@@ -98,6 +98,7 @@ footer{
     display: flex;
     flex-direction: row;
 
+    justify-content: flex-start;
     align-items: center;
 
     column-gap: 15px;

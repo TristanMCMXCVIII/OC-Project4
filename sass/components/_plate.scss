@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: space-between;
 
-    column-gap: 0px;
+    column-gap: 10px;
 
     border-radius: 15px;
 
@@ -23,24 +23,18 @@
     }
 
     .plate{
-
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: flex-start;
 
-        justify-content: space-between;
-
-        width: 70%;
+        row-gap: 10px;
+        //max-width: 60%;
+        overflow: hidden;
 
         padding:12px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
 
-        &__left{
-            display: flex;
-            flex-direction: column;
-    
-            row-gap: 10px;
-    
-            justify-content: flex-start;
-            overflow: hidden;
     
             &__title{
                 font-size: 18px;
@@ -48,9 +42,9 @@
                 font-style: 'Roboto';
                 margin: 0px;
 
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                //overflow: hidden;
+                //white-space: nowrap;
+                //text-overflow: ellipsis;
+                
            
             }
     
@@ -60,11 +54,11 @@
                 font-style: 'Roboto';
                 margin: 0px;
 
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                //overflow: hidden;
+                //white-space: nowrap;
+                //text-overflow: ellipsis;
+               
             }
-        }
+        
     }
     
     
@@ -85,7 +79,7 @@
 
         align-items: flex-end;
 
-        width: 30%;
+        //width: 30%;
 
         transform: translateX(80px);
         column-gap: 15px;
