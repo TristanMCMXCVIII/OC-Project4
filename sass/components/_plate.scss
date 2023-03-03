@@ -29,7 +29,7 @@
 
         justify-content: space-between;
 
-        width: 100%;
+        width: 70%;
 
         padding:12px;
 
@@ -40,12 +40,18 @@
             row-gap: 10px;
     
             justify-content: flex-start;
+            overflow: hidden;
     
             &__title{
                 font-size: 18px;
                 font-weight: 500;
                 font-style: 'Roboto';
                 margin: 0px;
+
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                //overflow: hidden;
+           
             }
     
             &__description{
@@ -53,6 +59,10 @@
                 font-weight: 300;
                 font-style: 'Roboto';
                 margin: 0px;
+
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                //overflow: hidden;
             }
         }
     }
@@ -74,6 +84,8 @@
         flex-direction: row;
 
         align-items: flex-end;
+
+        width: 30%;
 
         transform: translateX(80px);
         column-gap: 15px;
