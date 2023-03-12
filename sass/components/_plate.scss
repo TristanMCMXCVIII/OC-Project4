@@ -42,8 +42,9 @@
                 font-style: 'Roboto';
                 margin: 0px;
 
-                //white-space: nowrap;
-                //text-overflow: ellipsis;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
                 
            
             }
@@ -54,13 +55,13 @@
                 font-style: 'Roboto';
                 margin: 0px;
 
-                //white-space: nowrap;
-                //text-overflow: ellipsis;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
                
             }
         
     }
-    
     
     &:hover{
 

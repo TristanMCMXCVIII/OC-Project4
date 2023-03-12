@@ -16,11 +16,7 @@ html {
   --grey2: #EAEAEA;
 }
 
-.a {
-  text-decoration: none;
-}
-
-a:-webkit-any-link {
+a {
   text-decoration: none;
 }
 
@@ -249,12 +245,18 @@ h1 {
   font-weight: 500;
   font-style: "Roboto";
   margin: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card-plate .plate__description {
   font-size: 15px;
   font-weight: 300;
   font-style: "Roboto";
   margin: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card-plate:hover > .zone {
   transform: translateX(0px);
