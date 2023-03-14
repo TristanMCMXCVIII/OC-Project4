@@ -1,0 +1,93 @@
+
+
+.card-plate{
+
+    animation: plate-entering 1200ms both ease-in-out;
+    
+    & input{
+        position: absolute;
+        visibility: hidden;
+
+        &:checked + label .plate__checked{
+
+            animation: check-appearing 1200ms both ease-in-out;
+        }
+
+       
+    }
+    
+    & .plateX{
+        position: relative;
+    
+        @include flex;
+    
+        justify-content: space-between;
+    
+        background-color : yellow;
+        width: 100%;
+    
+        border-radius: 12px;
+        @include plate-shadow;
+    
+        overflow: hidden;
+    
+        & .plate__infos{
+            @include flex(column);
+    
+            width: 100%;
+            padding: 15px 0px 15px 15px;
+            row-gap: 10px;
+    
+            background-color: blue;
+    
+            white-space: nowrap;
+            overflow: hidden; //pour ne pas pousser les blocs suivants hors du bloc
+    
+            & .plate__title{
+                font-size: 18px;
+                font-weight: 500;
+                font-style: 'Roboto';
+    
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+    
+            & .plate__description{
+                font-size: 15px;
+                font-weight: 300;
+    
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    
+        & .plate__price{
+            @include flex(column);
+            justify-content: flex-end;
+    
+            padding: 12px 20px 12px 12px;
+    
+            background-color: orange;
+    
+            font-size: 15px;
+            font-weight: 700;
+        }
+    
+        & .plate__checked{
+            @include flex(column);
+            justify-content: center;
+            align-items: center;
+    
+            width: 80px;
+            background-color: palevioletred;
+
+            transform: translateX(80px);
+    
+            & .checked-icon{
+                height: 20px;
+                width: 20px; 
+            }
+        }
+    }
+}
+

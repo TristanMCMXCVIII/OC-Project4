@@ -1,0 +1,25 @@
+
+@keyframes plate-entering {
+    0%{
+        transform: translateX(-200%);
+    }
+    40%{
+        transform: translateX(-15%);
+        animation-timing-function: cubic-bezier(0,.73,.42,.43);
+    }
+    100%{
+        transform: translateX(0%);
+        animation-timing-function: cubic-bezier(.43,.42,.26,1);
+    }
+}
+
+
+
+@keyframes check-appearing {
+    0%{
+        transform: translateX(80px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
