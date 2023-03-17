@@ -13,10 +13,10 @@
 }
 @keyframes check-appearing {
   0% {
-    transform: translateX(80px);
+    width: 0px;
   }
   100% {
-    transform: translateX(0px);
+    width: 80px;
   }
 }
 html {
@@ -219,7 +219,7 @@ h1 {
   -moz-column-gap: 10px;
        column-gap: 10px;
   border-radius: 15px;
-  background-color: rgb(50, 87, 235);
+  background-color: rgb(95, 125, 247);
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   animation: plate-entering 1200ms both ease-in-out;
@@ -322,71 +322,82 @@ h1 {
   overflow: hidden;
 }
 
-.card-plate {
+.card-plateX {
   animation: plate-entering 1200ms both ease-in-out;
 }
-.card-plate input {
+.card-plateX input {
   position: absolute;
   visibility: hidden;
 }
-.card-plate input:checked + label .plate__checked {
-  animation: check-appearing 1200ms both ease-in-out;
+.card-plateX input:checked + label .plate__checked {
+  width: 80px;
 }
-.card-plate .plateX {
+.card-plateX input:checked + label .plate__checked .checked-icon {
+  height: 20px;
+  width: 20px;
+}
+.card-plateX .plateX {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   background-color: yellow;
-  width: 100%;
+  max-width: 100%;
   border-radius: 12px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
-.card-plate .plateX .plate__infos {
+.card-plateX .plateX .plate__infos {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   padding: 15px 0px 15px 15px;
   row-gap: 10px;
-  background-color: blue;
+  background-color: rgb(117, 117, 254);
   white-space: nowrap;
   overflow: hidden;
 }
-.card-plate .plateX .plate__infos .plate__title {
+.card-plateX .plateX .plate__infos .plate__title {
+  max-width: 100%;
   font-size: 18px;
   font-weight: 500;
   font-style: "Roboto";
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.card-plate .plateX .plate__infos .plate__description {
+.card-plateX .plateX .plate__infos .plate__description {
+  max-width: 100%;
   font-size: 15px;
   font-weight: 300;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.card-plate .plateX .plate__price {
+.card-plateX .plateX .plate__price {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 12px 20px 12px 12px;
+  align-items: flex-start;
+  width: 50px;
+  padding: 12px;
   background-color: orange;
   font-size: 15px;
   font-weight: 700;
 }
-.card-plate .plateX .plate__checked {
+.card-plateX .plateX .plate__checked {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80px;
+  width: 0px;
+  transition: width 1000ms ease-in-out;
   background-color: palevioletred;
-  transform: translateX(80px);
 }
-.card-plate .plateX .plate__checked .checked-icon {
-  height: 20px;
-  width: 20px;
+.card-plateX .plateX .plate__checked .checked-icon {
+  height: 0px;
+  width: 0px;
+  transition: width 1000ms 300ms, height 500ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform-origin: left;
 }
 
 .location {

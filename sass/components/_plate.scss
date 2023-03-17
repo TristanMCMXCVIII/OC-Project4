@@ -8,7 +8,7 @@
     column-gap: 10px;
     border-radius: 15px;
 
-    background-color: rgb(50, 87, 235);
+    background-color: rgb(95, 125, 247);
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 
     overflow: hidden;
@@ -16,10 +16,9 @@
     animation: plate-entering 1200ms both ease-in-out;
 
     // 2 - element d'animation plat
-    @for $i from 1 through 9{
+    @for $i from 1 through 9 {
         &--#{$i}{
             animation-delay: $i*400ms - 400ms;
-
         }
     }
 

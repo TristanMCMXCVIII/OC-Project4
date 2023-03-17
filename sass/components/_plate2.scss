@@ -1,6 +1,8 @@
 
 
-.card-plate{
+.card-plateX{
+
+
 
     animation: plate-entering 1200ms both ease-in-out;
     
@@ -9,41 +11,50 @@
         visibility: hidden;
 
         &:checked + label .plate__checked{
+            
+            //animation: check-appearing 500ms both ease-in-out;
+            width: 80px;
 
-            animation: check-appearing 1200ms both ease-in-out;
+            & .checked-icon{
+                height: 20px;
+                width: 20px;
+            }
         }
-
-       
     }
-    
+
+    // ~~~  PLATE  ~~~
+
     & .plateX{
         position: relative;
     
         @include flex;
     
-        justify-content: space-between;
+        justify-content: flex-start;
     
         background-color : yellow;
-        width: 100%;
+        max-width: 100%;
     
         border-radius: 12px;
         @include plate-shadow;
     
         overflow: hidden;
     
+        // 1 INFOS
         & .plate__infos{
             @include flex(column);
     
-            width: 100%;
+            max-width: 100%;
             padding: 15px 0px 15px 15px;
             row-gap: 10px;
     
-            background-color: blue;
+            background-color: rgb(117, 117, 254);
     
             white-space: nowrap;
             overflow: hidden; //pour ne pas pousser les blocs suivants hors du bloc
     
             & .plate__title{
+                max-width: 100%;
+
                 font-size: 18px;
                 font-weight: 500;
                 font-style: 'Roboto';
@@ -53,6 +64,8 @@
             }
     
             & .plate__description{
+                max-width: 100%;
+
                 font-size: 15px;
                 font-weight: 300;
     
@@ -61,11 +74,16 @@
             }
         }
     
+        // 2 PRICE
         & .plate__price{
+            
             @include flex(column);
             justify-content: flex-end;
+
+            align-items: flex-start;
     
-            padding: 12px 20px 12px 12px;
+            width: 50px;
+            padding: 12px;
     
             background-color: orange;
     
@@ -73,19 +91,27 @@
             font-weight: 700;
         }
     
+        // 3 CHECK
         & .plate__checked{
             @include flex(column);
             justify-content: center;
             align-items: center;
-    
-            width: 80px;
-            background-color: palevioletred;
 
-            transform: translateX(80px);
-    
+            width: 0px;
+            transition: width 1000ms ease-in-out;
+
+            background-color: palevioletred;
+            
+
+
             & .checked-icon{
-                height: 20px;
-                width: 20px; 
+                height: 0px;
+                width: 0px;
+
+
+                transition: width 1000ms 300ms, height 500ms;
+                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                transform-origin: left;
             }
         }
     }
