@@ -332,16 +332,33 @@ h1 {
 .card-plateX input:checked + label .plate__checked {
   width: 80px;
 }
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .card-plateX input:checked + label .plate__checked {
+    width: 100px;
+  }
+}
+@media all and (min-width: 992px) {
+  .card-plateX input:checked + label .plate__checked {
+    width: 120px;
+  }
+}
 .card-plateX input:checked + label .plate__checked .checked-icon {
   height: 20px;
   width: 20px;
+  margin: 25px;
+}
+@media all and (min-width: 992px) {
+  .card-plateX input:checked + label .plate__checked .checked-icon {
+    height: 25px;
+    width: 25px;
+  }
 }
 .card-plateX .plateX {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  background-color: yellow;
+  background-color: #FFFFFF;
   max-width: 100%;
   border-radius: 12px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -350,15 +367,15 @@ h1 {
 .card-plateX .plateX .plate__infos {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  min-width: 20px;
+  max-width: 800px;
+  width: auto;
   padding: 15px 0px 15px 15px;
   row-gap: 10px;
-  background-color: rgb(117, 117, 254);
   white-space: nowrap;
   overflow: hidden;
 }
 .card-plateX .plateX .plate__infos .plate__title {
-  max-width: 100%;
   font-size: 18px;
   font-weight: 500;
   font-style: "Roboto";
@@ -366,7 +383,6 @@ h1 {
   text-overflow: ellipsis;
 }
 .card-plateX .plateX .plate__infos .plate__description {
-  max-width: 100%;
   font-size: 15px;
   font-weight: 300;
   overflow: hidden;
@@ -379,7 +395,6 @@ h1 {
   align-items: flex-start;
   width: 50px;
   padding: 12px;
-  background-color: orange;
   font-size: 15px;
   font-weight: 700;
 }
@@ -389,13 +404,15 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 0px;
-  transition: width 1000ms ease-in-out;
-  background-color: palevioletred;
+  transition: width 800ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #99E2D0;
 }
 .card-plateX .plateX .plate__checked .checked-icon {
   height: 0px;
   width: 0px;
-  transition: width 1000ms 300ms, height 500ms;
+  margin: 0px;
+  transition: width 800ms 0ms, height 800ms, margin 800ms 0ms;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   transform-origin: left;
 }

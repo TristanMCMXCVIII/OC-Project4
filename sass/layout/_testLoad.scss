@@ -62,7 +62,7 @@ $anim-dur: 1000ms;
 
         @for $i from 1 through 5{
             &--#{$i}{
-                animation-delay: $anim-dur / 5 * $i;
+                animation-delay: calc($anim-dur / 5 * $i);
             }
         }
 
