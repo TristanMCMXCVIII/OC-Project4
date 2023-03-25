@@ -47,10 +47,10 @@ Au piment d'Espelette et à la truffe noire
   
 
 
-  
+
 ---     
 ######################
-Le délice des sens
+Le délice des sens    @ 2
 ######################
 
 Entrées
@@ -101,10 +101,11 @@ Tiramisu
 
 ---
 ######################
-La note enchantée
+La note enchantée    @3
 ######################
 
 Entrées
+
 Ravioles de foie gras 
 Accompagnées de leur crème à la truffe
 25€
@@ -117,13 +118,14 @@ Homard et espuma de potiron
 Marinés aux zestes d'orange
 20€
 
-######################
-
 Foie gras de canard cuit entier
 Confiture de figue et pain toasté
 35€
+
+######################
         
 Plats
+
 Noix de coquilles Saint-Jacques
 Sur lit de purée de céleri-rave
 40€
@@ -132,13 +134,14 @@ Langoustine poêlée
 Purée de patate douce
 35€
 
-######################
-
 Mijoté de queue de bœuf 
 Et riz sauvage aux zestes de citron
 44€
 
+######################
+
 Desserts
+
 Macaron noisette et chocolat
 Glace au caramel brun et sel de Guérande
 18€
@@ -156,10 +159,11 @@ Déstructurée
 
 ---
 ######################
-À la française
+À la française     @4
 ######################
 
 Entrées
+
 Tartare de poulpe acidulé
 Aux zestes d'orange
 25€
@@ -175,6 +179,7 @@ Revisitée
 ######################
 
 Plats
+
 Coquilles Saint-Jacques
 Accompagnées d'une purée de panais
 40€
@@ -190,6 +195,7 @@ Sur son lit de gnocchis aux légumes
 ######################
 
 Desserts
+
 Pétales de violettes glacés
 Et purée de noisettes
 18€

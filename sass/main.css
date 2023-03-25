@@ -248,6 +248,9 @@ h1 {
 .card-plateX--9 {
   animation-delay: 3200ms;
 }
+.card-plateX--10 {
+  animation-delay: 3600ms;
+}
 .card-plateX input {
   position: absolute;
   visibility: hidden;

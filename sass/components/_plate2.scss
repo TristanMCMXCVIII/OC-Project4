@@ -4,7 +4,7 @@
 
     animation: plate-entering 1200ms both ease-in-out;
 
-    @for $i from 1 through 9 {
+    @for $i from 1 through 10 {
         &--#{$i}{
             animation-delay: calc($i*400ms - 400ms);
         }

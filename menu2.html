@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/59e5c1453c.js" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="sass/main.css" type="text/css">
+
+		<title>OhMyFood</title>
+	</head>
+	<body>
+
+        <!-- ************** -->
+        <!-- *** HEADER *** -->
+        <!-- ************** -->
+    
+        <header class='header'>
+            <div class='header-container'>
+                <a href="./"> <!--http://127.0.0.1:5501/-->
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <img class='header-container__img--tall' src="assets/logo/ohmyfood@2x.svg" alt="Logo OhMyFood">
+            </div>
+        </header>
+
+        <!-- ************** -->
+        <!-- *** SCREEN *** -->
+        <!-- ************** -->
+
+        <div class='screen'>
+
+            <!-- *** SECTION WALLPAPER *** -->
+
+            <div class='section'>
+                <div class="frame">
+                    <img class="card__img" src="./assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Logo OhMyFood">
+                </div>
+            </div>
+
+            <!-- *** SECTION MENU *** -->
+
+            <div class='section--negativeMargin'>
+                <div class="container">
+                    <div class="menu-description">
+                        <div class="menu__header">
+                            <p class="menu__title">La note enchantée</p>
+                            <i class="fa-regular fa-heart dontlike">
+                                <i class="fa-solid fa-heart like"></i>
+                            </i>
+                        </div>
+
+                        <div class="group-menu">
+                            <div class="group-menu__titre">
+                                ENTRÉES
+                                <div class="separator--green"></div>
+                            </div>
+
+                            <!--    XXX    PLATE    XXX   --> 
+                            <div class="card-plateX card-plateX--1">
+                                <input type="checkbox" id="plate-1">
+                                <label class="plateX" for="plate-1">
+                                    <span class="plate__infos">
+                                        <span class="plate__title">
+                                            Ravioles de foie gras 
+                                        </span>
+                                        <span class="plate__description">
+                                            Accompagnées de leur crème à la truffe
+                                        </span>
+                                    </span>
+                                    <span class="plate__price">
+                                        25€
+                                    </span>
+                                    <span class="plate__checked">
+                                        <img class="checked-icon" src="./assets/Check.svg" alt="logo check">
+                                    </span>
+                                </label>
+                            </div>
+
+                            <!--    XXX    PLATE    XXX   --> 
+                            <div class="card-plateX card-plateX--2">
+                                <input type="checkbox" id="plate-2">
+                                <label class="plateX" for="plate-2">
+                                    <span class="plate__infos">
+                                        <span class="plate__title">
+                                            Caviar osciètre 
+                                        </span>
+                                        <span class="plate__description">
+                                            Sur blini à la farine de blé noir
+                                        </span>
+                                    </span>
+                                    <span class="plate__price">
+                                        35€
+                                    </span>
+                                    <span class="plate__checked">
+                                        <img class="checked-icon" src="./assets/Check.svg" alt="logo check">
+                                    </span>
+                                </label>
+                            </div>
+                            
+                            <!--    XXX    PLATE    XXX   --> 
+                            <div class="card-plateX card-plateX--3">
+                                <input type="checkbox" id="plate-3">
+                                <label class="plateX" for="plate-3">
+                                    <span class="plate__infos">
+                                        <span class="plate__title">
+                                            Homard et espuma de potiron
+                                        </span>
+                                        <span class="plate__description">
+                                            Marinés aux zestes d'orange
+                                        </span>
+                                    </span>
+                                    <span class="plate__price">
+                                        20€
+                                    </span>
+                                    <span class="plate__checked">
+                                        <img class="checked-icon" src="./assets/Check.svg" alt="logo check">
+                                    </span>
+                                </label>
+                            </div>
+
+                            <!--    XXX    PLATE    XXX   --> 
+                            <div class="card-plateX card-plateX--4">
+                                <input type="checkbox" id="plate-4">
+                                <label class="plateX" for="plate-4">
+                                    <span class="plate__infos">
+                                        <span class="plate__title">
+                                            Foie gras de canard cuit entier
+                                        </span>
+                                        <span class="plate__description">
+                                            Confiture de figue et pain toasté
+                                        </span>
+                                    </span>
+                                    <span class="plate__price">
+                                        35€
+                                    </span>
+                                    <span class="plate__checked">
+                                        <img class="checked-icon" src="./assets/Check.svg" alt="logo check">
+                                    </span>
+                                </label>
+                            </div>
+                            
+
+                        </div>
+
+                        <div class="group-menu">
+                            <div class="group-menu__titre">
+                                PLATS
+                                <div class="separator--green"></div>
+                            </div>
+
+                            <!--    XXX    PLATE    XXX   --> 
+                            <div class="card-plateX card-plateX--5">
+                                <input type="checkbox" id="plate-5">
+                                <label class="plateX" for="plate-5">
+                                    <span class="plate__infos">
+                                        <span class="plate__title">
+                                            Noix de coquilles Saint-Jacques
+                                        </span>
+                                        <span class="plate__description">
+                                            Sur lit de purée de céleri-rave
+                                        </span>
+                                    </span>
+                                    <span class="plate__price">
+                                        40€
+                                    </span>
+                                    <span class="plate__checked">
+                                        <img class="checked-icon" src="./assets/Check.svg" alt="logo check">
+                                    </span>
+                                </label>
+                            </div>
+
+                            <!--    XXX    PLATE    XXX   --> 
+                            <div class="card-plateX card-plateX--6">
+                                <input type="checkbox" id="plate-6">
+                                <label class="plateX" for="plate-6">
+                                    <span class="plate__infos">
+                                        <span class="plate__title">
+                                            Langoustine poêlée
+                                        </span>
+                                        <span class="plate__description">
+                                            Purée de patate douce
+                                        </span>
+                                    </span>
+                                    <span class="plate__price">
+                                        35€
+                                    </span>
+                                    <span class="plate__checked">
+                                        <img class="checked-icon" src="./assets/Check.svg" alt="logo check">
+                                    </span>
+                                </label>
+                            </div>
+                            
+                            <!--    XXX    PLATE    XXX   --> 
+                            <div class="card-plateX card-plateX--7">
+                                <input type="checkbox" id="plate-7">
+                                <label class="plateX" for="plate-7">
+                                    <span class="plate__infos">
+                                        <span class="plate__title">
+                                            Mijoté de queue de bœuf 
+                                        </span>
+                                        <span class="plate__description">
+                                            Et riz sauvage aux zestes de citron
+                                        </span>
+                                    </span>
+                                    <span class="plate__price">
+                                        44€
+                                    </span>
+                                    <span class="plate__checked">
+                                        <img class="checked-icon" src="./assets/Check.svg" alt="logo check">
+                                    </span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="group-menu">
+                            <div class="group-menu__titre">
+                                DESSERTS
+                                <div class="separator--green"></div>
+                            </div>
+
+                            <!--    XXX    PLATE    XXX   --> 
+                            <div class="card-plateX card-plateX--8">
+                                <input type="checkbox" id="plate-8">
+                                <label class="plateX" for="plate-8">
+                                    <span class="plate__infos">
+                                        <span class="plate__title">
+                                            Macaron noisette et chocolat
+                                        </span>
+                                        <span class="plate__description">
+                                            Glace au caramel brun et sel de Guérande
+                                        </span>
+                                    </span>
+                                    <span class="plate__price">
+                                        18€
+                                    </span>
+                                    <span class="plate__checked">
+                                        <img class="checked-icon" src="./assets/Check.svg" alt="logo check">
+                                    </span>
+                                </label>
+                            </div>
+
+                            <!--    XXX    PLATE    XXX   --> 
+                            <div class="card-plateX card-plateX--9">
+                                <input type="checkbox" id="plate-9">
+                                <label class="plateX" for="plate-9">
+                                    <span class="plate__infos">
+                                        <span class="plate__title">
+                                            Baba au rhum revisité 
+                                        </span>
+                                        <span class="plate__description">
+                                            Avec son coulis de citron
+                                        </span>
+                                    </span>
+                                    <span class="plate__price">
+                                        22€
+                                    </span>
+                                    <span class="plate__checked">
+                                        <img class="checked-icon" src="./assets/Check.svg" alt="logo check">
+                                    </span>
+                                </label>
+                            </div>
+                            
+                            <!--    XXX    PLATE    XXX   --> 
+                            <div class="card-plateX card-plateX--10">
+                                <input type="checkbox" id="plate-10">
+                                <label class="plateX" for="plate-10">
+                                    <span class="plate__infos">
+                                        <span class="plate__title">
+                                            Tarte au citron meringuée
+                                        </span>
+                                        <span class="plate__description">
+                                            Déstructurée
+                                        </span>
+                                    </span>
+                                    <span class="plate__price">
+                                        23€
+                                    </span>
+                                    <span class="plate__checked">
+                                        <img class="checked-icon" src="./assets/Check.svg" alt="logo check">
+                                    </span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <button class="button-gradient" type="button">Commander</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- *** SECTION xxx *** -->
+
+        </div>
+
+        <!-- ************** -->
+        <!-- *** FOOTER *** -->
+        <!-- ************** -->
+
+        <footer>
+            <div class='footer__container'>
+                <div class='footer__content'> 
+                    <div class="footer__image">
+                        <img class="footer__image__self" src="./assets/ohmyfood.svg" alt="Logo OhMyFood">
+                    </div>
+                    <div class="footer__links">
+                        <div class="complexe-line">
+                            <i class="fa-solid fa-utensils footer__icon"></i>
+                            <div class="footer__text">Proposer un restaurant</div>
+                        </div>
+                        <div class="complexe-line">
+                            <i class="fa-solid fa-handshake-angle footer__icon"></i>
+                            <div class="footer__text">Dévenir partenaire</div>
+                        </div>
+                        <div class="footer__text">Mentions légales</div>
+                        <div class="footer__text">
+                            <a href = "mailto:abc@example.com" class="footer__text">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+	</body>
+</html>
