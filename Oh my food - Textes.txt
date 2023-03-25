@@ -1,4 +1,6 @@
+######################
 La palette du goût
+######################
 
 Entrées
 Fricassée d'escargots
@@ -13,6 +15,7 @@ Et ses copeaux de truffe noire
 Assaisonné à la truffe sur lit de caviar
 20€
 
+######################
 
 Plats
 Filet de bœuf aux herbes
@@ -26,7 +29,9 @@ Parmentier de queue de bœuf
 Filet de turbot
 Aux agrumes
 44€
-        
+
+######################
+
 Desserts
 Paris-Brest
 Revisité
@@ -40,9 +45,13 @@ Mousse au chocolat
 Au piment d'Espelette et à la truffe noire
 23€  
   
----     
 
+
+  
+---     
+######################
 Le délice des sens
+######################
 
 Entrées
 Tartare de thon
@@ -57,6 +66,8 @@ Velouté de cèpes
 Aux truffes
 20€
         
+######################
+
 Plats
 Poulet rôti aux herbes de Provence 
 Et sa crème de truffe
@@ -69,6 +80,8 @@ Et ses légumes de saison
 Côte de bœuf Angus 
 Et sa purée de panais
 44€
+
+######################
 
 Desserts
 Farandole de desserts
@@ -83,9 +96,13 @@ Tiramisu
 À la noisette
 23€
 
----
 
+
+
+---
+######################
 La note enchantée
+######################
 
 Entrées
 Ravioles de foie gras 
@@ -100,6 +117,8 @@ Homard et espuma de potiron
 Marinés aux zestes d'orange
 20€
 
+######################
+
 Foie gras de canard cuit entier
 Confiture de figue et pain toasté
 35€
@@ -112,6 +131,8 @@ Sur lit de purée de céleri-rave
 Langoustine poêlée
 Purée de patate douce
 35€
+
+######################
 
 Mijoté de queue de bœuf 
 Et riz sauvage aux zestes de citron
@@ -130,9 +151,13 @@ Tarte au citron meringuée
 Déstructurée
 23€
 
----
 
+
+
+---
+######################
 À la française
+######################
 
 Entrées
 Tartare de poulpe acidulé
@@ -147,6 +172,8 @@ Soupe à l'oignon
 Revisitée
 20€
 
+######################
+
 Plats
 Coquilles Saint-Jacques
 Accompagnées d'une purée de panais
@@ -159,6 +186,8 @@ Et parmentier de pommes de terre
 Pigeonneau d’Ille-et-Vilaine
 Sur son lit de gnocchis aux légumes
 44€
+
+######################
 
 Desserts
 Pétales de violettes glacés
